@@ -2,7 +2,9 @@
 * @author Djonker
 * @version 1.0
 * Code for calculating the standard deviation of an array
-*/import java.util.Arrays;
+*/
+import java.util.Arrays;
+import java.util.Math;
 
 public class StandardDeviation {
 
