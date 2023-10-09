@@ -31,7 +31,7 @@ public class StandardDeviation {
         //square each number in array after subtracting the mean from it
         //add all that up in a result variable
 
-        for(Double x : arr){
+        for (Double x : arr){
 
             result = result + ((x - mean) * (x - mean));
 
