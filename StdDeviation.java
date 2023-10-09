@@ -1,7 +1,8 @@
 import java.util.Arrays;
-public class StdDeviation {
 
-    public static Double stdDev(Double[] arg){
+public class StandardDeviation {
+
+    public static Double stdDev(Double[] arr){
         
         //calculate mean
 
@@ -9,7 +10,7 @@ public class StdDeviation {
 
         Double z = 0.0;
 
-        for(Double x : arg) {
+        for (Double x : arr) {
             
             y = y + x;
 
@@ -19,17 +20,15 @@ public class StdDeviation {
 
         Double mean = y / z;
 
-        double temp = 0.0;
+        Double result = 0.0;
 
-        for(Double x : arg){
+        for(Double x : arr){
 
-            temp = temp + ((x - mean) * (x - mean));
+            result = result + ((x - mean) * (x - mean));
 
         }
 
-        temp = temp / (arg.length - 1);
-
-        temp = Math.sqrt(temp);
+        result = Math.sqrt(result / (arr.length - 1));
 
         return temp;
 
