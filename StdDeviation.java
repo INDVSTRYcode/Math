@@ -1,4 +1,8 @@
-import java.util.Arrays;
+/**
+* @author Djonker
+* @version 1.0
+* Code for calculating the standard deviation of an array
+*/import java.util.Arrays;
 
 public class StandardDeviation {
 
@@ -22,11 +26,17 @@ public class StandardDeviation {
 
         Double result = 0.0;
 
+        //square each number in array after subtracting the mean from it
+        //add all that up in a result variable
+
         for(Double x : arr){
 
             result = result + ((x - mean) * (x - mean));
 
         }
+
+        //divide the result by the amount of numbers in the array minus one
+        //the take the square root
 
         result = Math.sqrt(result / (arr.length - 1));
 
@@ -35,6 +45,8 @@ public class StandardDeviation {
     }
     
     public static void main(String[] args){
+
+        //gather and transform input
 
         String[] temp = args[0].split(", ");
 
